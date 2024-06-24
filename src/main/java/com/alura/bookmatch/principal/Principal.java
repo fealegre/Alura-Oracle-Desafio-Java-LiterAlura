@@ -16,7 +16,7 @@ public class Principal {
     private ConvierteDatos convierteDatos = new ConvierteDatos();
     private LibroRepository libroRepository;
     private AutorRepository autorRepository;
-    private String[] idiomas= {"en","es","ca","pt","de","fi","hu","la"};
+    private String[] idiomas= {"en","es","ca","pt","de","fi","hu","la","fr"};
 
     public Principal(LibroRepository libroRepository, AutorRepository autorRepository){
         this.libroRepository=libroRepository;
@@ -72,7 +72,7 @@ public class Principal {
 
     private void mostrarLibrosPorIdioma() {
         System.out.println("Ingrese el idioma de los libros que desea ver:");
-        System.out.println(("en: Inglés | es: Español | ca: Catalán | pt: Portugués | de: Alemán | fi: Finés | hu: Húngaro | la: Latín"));
+        System.out.println(("en: Inglés | es: Español | ca: Catalán | pt: Portugués | de: Alemán | fi: Finés | hu: Húngaro | la: Latín | fr: Francés"));
         var opcion = ingreso.nextLine();
         if (Arrays.asList(idiomas).contains(opcion)){
             libroRepository.findByIdiomas(opcion).forEach(l-> System.out.printf("Título: %s | Idioma: %s\n",l.getTitulo(),l.getIdiomas()));
@@ -117,7 +117,6 @@ public class Principal {
             } catch (DataIntegrityViolationException e) {
                 System.out.println("ERROR: No se pudo guardar el registro" + e.getMessage());                            }
         }
-
         }
     }
 
