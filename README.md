@@ -21,7 +21,7 @@
 
 <h1>Hi!</h1>
 <p>The Alura-Oracle-Desafio-Java-LiterAlura project is a terminal application that consumes the Gutendex API in order to feed a database of Books and Authors. 
-It was developed using the folowing technologies:</p>
+It was developed using the following technologies:</p>
 <br/>
   <li>Java 17</li>
   <li>Spring Boot 3.3.0</li>
