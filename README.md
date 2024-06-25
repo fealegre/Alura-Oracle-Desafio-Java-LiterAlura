@@ -28,7 +28,7 @@ It was developed using the following technologies:</p>
   <li>PostgreSQL ORDBMS 16</li>
   <li>IntelliJ IDEA Community Edition 2024.1</li>
   <br/>
-<p>The app has a menu o six functionalities, each of them accesibles by tiping the corresponding number of menu item. The menu is in spanish language.</p>
+<p>The app has a menu o six functionalities, each of them accesibles by typing the corresponding number of menu item. The menu is in spanish language.</p>
 <a href="https://imgur.com/0409RTz"><img src="https://i.imgur.com/0409RTz.png" title="source: imgur.com" /></a>
 
 
